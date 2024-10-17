@@ -12,12 +12,16 @@
     "build": "tsc"
   },
   "dependencies": {
+    "@fastify/jwt": "^9.0.1",
+    "@uaaa/core": "^0.1.0",
+    "better-sqlite3": "^11.3.0",
     "dotenv": "^16.4.5",
     "fastify": "^5.0.0",
     "fastify-jwt-jwks": "^2.0.0",
-    "level": "^8.0.1"
+    "fastify-plugin": "^5.0.1"
   },
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
     "@types/node": "^22.7.6",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"

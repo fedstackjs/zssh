@@ -10,7 +10,8 @@
     "types": ["node"],
     "outDir": "lib",
     "removeComments": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "sourceMap": true
   },
   "include": ["src/**/*.ts"]
 }

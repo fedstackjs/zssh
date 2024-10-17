@@ -12,4 +12,6 @@
 #!.yarn/cache
 .pnp.*
 
-lib
+/lib
+.env
+database.sqlite

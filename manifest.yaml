@@ -1,0 +1,26 @@
+appId: org.fedstack.zssh
+name: FedStack ZSSH
+description: Zero-config Secure SHell
+providedPermissions:
+  - name: Public Key
+    description: Get the public key of the user
+    path: /pub
+  - name: Sign
+    description: Get a signed, temporary SSH key
+    path: /sign
+requestedClaims:
+  - name: username
+    reason: Get username
+    required: true
+requestedPermissions:
+  - reason: Access granted claims
+    perm: uaaa/session/claim
+    required: true
+callbackUrls: []
+variables: {}
+secrets: {}
+promoted: false
+securityLevel: 1
+openid:
+  additionalClaims: {}
+  allowPublicClient: true

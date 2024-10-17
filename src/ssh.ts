@@ -9,6 +9,7 @@ const execFileAsync = promisify(child_process.execFile)
 export interface ISSHKey {
   key: string
   pub: string
+  cert?: string
 }
 
 export async function withSSHTmpDir<T>(cb: (dir: string) => Promise<T>) {
@@ -50,6 +51,6 @@ export async function signKey(
       { cwd: dir }
     )
     const cert = await fs.readFile(path.join(dir, 'key-cert.pub'), 'utf8')
-    return { key: key.key, pub: cert }
+    return { ...key, cert }
   })
 }
