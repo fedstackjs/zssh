@@ -1,1 +1,1 @@
-# zssh
+# Zero-config Secure SHell
